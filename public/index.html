@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <title>mini</title>
+  </head>
+  <body>
+    <!-- app-header -->
+    <div
+      class="container z-20 mx-auto max-w-screen-2xl sticky px-4 md:px-4 lg:px-6 top-0"
+    >
+      <nav class="bg-white shadow-lg grid-rows-[90px_1fr] grid grid-cols-12">
+        <!-- logo -->
+        <div
+          class="col-span-3 lg:col-span-3 xl:col-span-2 row-start-1 md:col-span-3 row-span-1"
+        >
+          <a
+            id="as"
+            href="#"
+            class="w-max md:w-auto p-6 pb-9 md:bg-slate-900 flex items-center justify-center"
+          >
+            <span
+              ><svg
+                width="187"
+                height="30"
+                fill="none"
+                stroke="currentColor"
+                class="text-slate-800 md:text-white fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M60.064 27h3.768l3.144-11.088L70.144 27h3.768l4.704-16.8h-3.48L71.92 22.656 68.392 10.2H65.56l-3.504 12.456L58.84 10.2h-3.48L60.064 27Zm24.61.336c3.529 0 6.36-2.76 6.36-6.336 0-3.576-2.831-6.336-6.36-6.336-3.527 0-6.335 2.76-6.335 6.336 0 3.576 2.808 6.336 6.336 6.336Zm0-3.024c-1.823 0-3.24-1.368-3.24-3.312 0-1.944 1.417-3.312 3.24-3.312 1.849 0 3.265 1.368 3.265 3.312 0 1.944-1.416 3.312-3.264 3.312Zm11.635-7.248V15h-3.096v12h3.096v-5.736c0-2.52 2.04-3.24 3.648-3.048V14.76c-1.512 0-3.024.672-3.648 2.304ZM112.832 27l-4.968-6.072L112.688 15h-3.696l-4.128 5.28V10.2h-3.096V27h3.096v-5.448L109.232 27h3.6Z"
+                  fill="#fff"
+                  class="fill-current"
+                />
+                <path
+                  d="M120.089 27.336c2.352 0 4.392-1.248 5.424-3.12l-2.688-1.536c-.48.984-1.512 1.584-2.76 1.584-1.848 0-3.216-1.368-3.216-3.264 0-1.92 1.368-3.288 3.216-3.288 1.224 0 2.256.624 2.736 1.608l2.664-1.56c-.984-1.848-3.024-3.096-5.376-3.096-3.648 0-6.336 2.76-6.336 6.336 0 3.576 2.688 6.336 6.336 6.336ZM136.083 15v1.416c-.864-1.08-2.16-1.752-3.912-1.752-3.192 0-5.832 2.76-5.832 6.336 0 3.576 2.64 6.336 5.832 6.336 1.752 0 3.048-.672 3.912-1.752V27h3.096V15h-3.096Zm-3.336 9.384c-1.896 0-3.312-1.368-3.312-3.384s1.416-3.384 3.312-3.384c1.92 0 3.336 1.368 3.336 3.384s-1.416 3.384-3.336 3.384Zm16.103-6.408V15h-2.712v-3.36l-3.096.936V15h-2.088v2.976h2.088v4.992c0 3.24 1.464 4.512 5.808 4.032v-2.808c-1.776.096-2.712.072-2.712-1.224v-4.992h2.712Zm3.719-4.416c1.056 0 1.92-.864 1.92-1.896s-.864-1.92-1.92-1.92c-1.032 0-1.896.888-1.896 1.92s.864 1.896 1.896 1.896ZM151.033 27h3.096V15h-3.096v12Zm11.642.336c3.528 0 6.36-2.76 6.36-6.336 0-3.576-2.832-6.336-6.36-6.336-3.528 0-6.336 2.76-6.336 6.336 0 3.576 2.808 6.336 6.336 6.336Zm0-3.024c-1.824 0-3.24-1.368-3.24-3.312 0-1.944 1.416-3.312 3.24-3.312 1.848 0 3.264 1.368 3.264 3.312 0 1.944-1.416 3.312-3.264 3.312Zm15.21-9.648c-1.608 0-2.856.6-3.576 1.68V15h-3.096v12h3.096v-6.48c0-2.088 1.128-2.976 2.64-2.976 1.392 0 2.376.84 2.376 2.472V27h3.096v-7.368c0-3.192-1.992-4.968-4.536-4.968Z"
+                  fill="#A3BFFA"
+                  class="fill-current text-blue-400"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M42.911 11.604 35.213 7.16v20.645h9v2h-44v-2h4v-12.72l-3.728.933L0 14.078l21.09-5.273h3.122a9.551 9.551 0 0 0-.68 2.559l-.483 3.975 5.164-2.982v15.448h5V7.161l-7.696 4.444a7.502 7.502 0 0 1 2.565-4.8h-4.12a7.489 7.489 0 0 1 6.646-2.972L25.017.603a7.488 7.488 0 0 1 6.696.403c1.039.6 1.88 1.41 2.5 2.347a7.461 7.461 0 0 1 2.5-2.347 7.49 7.49 0 0 1 6.698-.402l-5.593 3.229a7.488 7.488 0 0 1 6.646 2.973h-4.12a7.498 7.498 0 0 1 2.567 4.798ZM24.213 27.805v-10h-6v10h6Zm-11-8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
+                  fill="#A3BFFA"
+                  class="fill-current text-blue-400"
+                /></svg
+            ></span>
+          </a>
+        </div>
+        <!-- serch bar -->
+        <div
+          class="col-span-12 row-start-2 row-span-2 md:col-span-3 md:col-start-4 lg:col-start-4 md:row-start-1"
+        >
+          <div class="ml-4 p-6 flex items-center justify-between">
+            <div class="relative bg-gray-100 rounded-e-lg">
+              <button
+                type="submit"
+                class="flex justify-center items-center absolute bg-gray-100 top-0 rounded-s-lg -left-7 p-1 text-sm font-medium h-full text-gray-600"
+              >
+                <svg
+                  class="w-5 h-5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </button>
+              <input
+                type="search"
+                id="search-dropdown"
+                class="block w-full border-none text-base text-slate-700 bg-transparent rounded-lg focus:outline-none"
+                placeholder="title...."
+                required
+              />
+            </div>
+            <!-- serch filter -->
+            <div class="blok md:hidden mr-4 ml-4">
+              <div
+                class="flex items-center justify-center bg-slate-400 rounded-xl px-5 py-2"
+              >
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM3 7C3 6.44772 3.44772 6 4 6H14C14.5523 6 15 6.44772 15 7C15 7.55228 14.5523 8 14 8H4C3.44772 8 3 7.55228 3 7ZM7 12C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14H11C11.5523 14 12 13.5523 12 13C12 12.4477 11.5523 12 11 12H7Z"
+                    fill="#A0AEC0"
+                  />
+                </svg>
+                <span class="md:text-xl text-white font-bold">Filter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ham -->
+        <div class="sm:hidden block col-start-10 col-span-4 row-start-1">
+          <div class="flex items-center justify-center p-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              class="w-9 h-9"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- ul -->
+        <div
+          class="font-bold p-6 hidden sm:block col-span-8 md:col-span-6 sm:col-start-5 lg:col-span-6 lg:col-start-7"
+        >
+          <ul
+            class="flex gap-x-0 lg:gap-x-4 items-center lg:text-lg text-slate-800"
+          >
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 rounded-md block hover:bg-gray-100 transition-all duration-500"
+                >List your</a
+              >
+            </li>
+
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 rounded-md block hover:bg-gray-100 transition-all duration-500"
+              >
+                Trips
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 rounded-md block hover:bg-gray-100 transition-all duration-500"
+              >
+                Message
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 rounded-md block hover:bg-gray-100 transition-all duration-500"
+                >Support</a
+              >
+            </li>
+            <li>
+              <a href="">
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- app -->
+    <div
+      class="md:px-4 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[50px_minmax(1fr)]"
+    >
+      <!-- app-sidebar -->
+      <div
+        class="bg-gray-800 row-span-2 col-span-3 xl:col-span-2 hidden md:block"
+      >
+        <div class="max-h-[calc(100vh_-_120px)] overflow-auto sticky top-28">
+          <!-- select options -->
+          <div class="grid grid-cols-2 gap-6 p-6">
+            <div class="col-span-1">
+              <form class="max-w-sm mx-auto">
+                <label
+                  for="countries"
+                  class="block mb-2 md:text-sm lg:text-lg font-medium text-slate-400"
+                  >Bedrooms</label
+                >
+                <select
+                  id="countries"
+                  class="border outline-none text-sm rounded-lg focus:border-blue-500 block w-full p-2 bg-gray-600 border-gray-600 text-white focus:ring-blue-500"
+                >
+                  <option selected>1</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-span-1">
+              <form class="max-w-sm mx-auto">
+                <label
+                  for="countries"
+                  class="block mb-2 md:text-sm lg:text-lg font-medium text-slate-400"
+                  >Bathrooms</label
+                >
+                <select
+                  id="countries"
+                  class="border outline-none text-sm rounded-lg focus:border-blue-500 block w-full p-2 bg-gray-600 border-gray-600 text-white focus:ring-blue-500 dark:focus:border-blue-500"
+                >
+                  <option selected>4</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </form>
+            </div>
+            <div class="col-span-2 w-full">
+              <form class="max-w-sm mx-auto">
+                <label
+                  for="countries"
+                  class="block mb-2 md:text-sm lg:text-lg font-medium text-slate-400"
+                  >Price Range</label
+                >
+                <select
+                  id="countries"
+                  class="border outline-none md:text-sm lg:text-lg rounded-lg block w-full p-2 bg-gray-600 border-gray-600 text-white focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option selected>Up to $2,000 /wk</option>
+                  <option value="US">United States</option>
+                  <option value="CA">Canada</option>
+                  <option value="FR">France</option>
+                  <option value="DE">Germany</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <hr class="h-0.5 border-0 bg-gray-700" />
+          <!-- app-filters -->
+
+          <div class="text-slate-50 md:text-sm lg:text-lg">
+            <div class="px-4 p-2">
+              <div class="text-slate-400 mb-2">Property Type</div>
+
+              <label for="">
+                <input
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded-full p-3 text-blue-500 focus:ring-blue-500"
+                />
+                TownHouse
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded-full p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Apartment
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded-full p-3 text-blue-500 focus:ring-blue-500"
+                />
+                TownHouse
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded-full p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Loft
+              </label>
+            </div>
+          </div>
+          <hr class="h-0.5 border-0 mt-2 bg-gray-700" />
+          <!-- Amenities -->
+          <div class="text-slate-50 md:text-sm lg:text-lg">
+            <div class="px-4 p-2">
+              <div class="text-slate-400 mb-2">Property Type</div>
+
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                TownHouse
+              </label>
+            </div>
+
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Apartment
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                TownHouse
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Loft
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Loft
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Loft
+              </label>
+            </div>
+            <div class="px-4 p-2 mr-4">
+              <label for="">
+                <input
+                  id="1"
+                  type="checkbox"
+                  class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
+                />
+                Loft
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- app-content -->
+      <div class="px-4 md:px-4 lg:px-6 col-span-12 md:col-span-9">
+        <!-- description -->
+        <div class="col-span-full mb-2">
+          <div class="bg-white flex justify-between">
+            <div>
+              <h1 class="text-lg">Los Angeles</h1>
+              <p class="text-sm text-slate-400">
+                Live like the stars in these luxurious Southern California
+                estates.
+              </p>
+            </div>
+            <span class="hidden md:block self-end text-blue-600 text-sm"
+              >View all</span
+            >
+          </div>
+        </div>
+        <!-- product section -->
+        <div
+          class="grid gap-y-12 grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-3 md:px-0 sm:gap-x-6 md:gap-y-20 mb-20"
+        >
+          <div class="relative row-span-2 w-full h-full bg-gray-100 rounded-xl">
+            <div class="flex items-center justify-center">
+              <img
+                class="rounded-xl bg-auto"
+                src="../public/image/64dc1cd3_original.jpg"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
+              >
+                <div class="px-4 pt-4">
+                  <div class="flex items-center">
+                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+                      >PLUS</span
+                    >
+                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                  </div>
+                  <h1 class="font-bold">Modern home in city center</h1>
+                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <div class="flex items-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <span class="text-sm text-slate-400 ml-2">34 Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative row-span-2 w-full h-full bg-gray-100 rounded-xl">
+            <div class="flex items-center justify-center">
+              <img
+                class="rounded-xl bg-auto"
+                src="../public/image/64dc1cd3_original.jpg"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
+              >
+                <div class="px-4 pt-4">
+                  <div class="flex items-center">
+                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+                      >PLUS</span
+                    >
+                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                  </div>
+                  <h1 class="font-bold">Modern home in city center</h1>
+                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <div class="flex items-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <span class="text-sm text-slate-400 ml-2">34 Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative row-span-2 w-full h-full bg-gray-100 rounded-xl">
+            <div class="flex items-center justify-center">
+              <img
+                class="rounded-xl bg-auto"
+                src="../public/image/64dc1cd3_original.jpg"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
+              >
+                <div class="px-4 pt-4">
+                  <div class="flex items-center">
+                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+                      >PLUS</span
+                    >
+                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                  </div>
+                  <h1 class="font-bold">Modern home in city center</h1>
+                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <div class="flex items-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <span class="text-sm text-slate-400 ml-2">34 Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- description -->
+        <div class="col-span-full mb-2">
+          <div class="bg-white flex justify-between">
+            <div>
+              <h1 class="text-lg">Los Angeles</h1>
+              <p class="text-sm text-slate-400">
+                Live like the stars in these luxurious Southern California
+                estates.
+              </p>
+            </div>
+            <span class="hidden md:block self-end text-blue-600 text-sm"
+              >View all</span
+            >
+          </div>
+        </div>
+        <div
+          class="grid gap-y-12 grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-3 md:px-0 sm:gap-x-6 md:gap-y-20 mb-20"
+        >
+          <!-- pr -->
+          <div class="relative w-full h-full bg-gray-100 rounded-xl">
+            <div class="flex items-center justify-center">
+              <img
+                class="rounded-xl bg-auto"
+                src="../public/image/64dc1cd3_original.jpg"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
+              >
+                <div class="px-4 pt-4">
+                  <div class="flex items-center">
+                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+                      >PLUS</span
+                    >
+                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                  </div>
+                  <h1 class="font-bold">Modern home in city center</h1>
+                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <div class="flex items-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <span class="text-sm text-slate-400 ml-2">34 Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full h-full bg-gray-100 rounded-xl">
+            <div class="flex items-center justify-center">
+              <img
+                class="rounded-xl bg-auto"
+                src="../public/image/64dc1cd3_original.jpg"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
+              >
+                <div class="px-4 pt-4">
+                  <div class="flex items-center">
+                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+                      >PLUS</span
+                    >
+                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                  </div>
+                  <h1 class="font-bold">Modern home in city center</h1>
+                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <div class="flex items-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <span class="text-sm text-slate-400 ml-2">34 Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full h-full bg-gray-100 rounded-xl">
+            <div class="flex items-center justify-center">
+              <img
+                class="rounded-xl bg-auto"
+                src="../public/image/64dc1cd3_original.jpg"
+                alt=""
+              />
+              <div
+                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
+              >
+                <div class="px-4 pt-4">
+                  <div class="flex items-center">
+                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+                      >PLUS</span
+                    >
+                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                  </div>
+                  <h1 class="font-bold">Modern home in city center</h1>
+                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <div class="flex items-center">
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <svg
+                      width="12"
+                      height="12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.283 10.93a1 1 0 0 1-1.451-1.054l.472-2.754-2-1.951a1 1 0 0 1 .553-1.706l2.766-.402L4.86.557a1 1 0 0 1 1.793 0L7.89 3.063l2.766.402a1 1 0 0 1 .554 1.706l-2.002 1.95.473 2.755A1 1 0 0 1 8.23 10.93l-2.474-1.3-2.473 1.3Z"
+                        fill="#38B2AC"
+                      />
+                    </svg>
+                    <span class="text-sm text-slate-400 ml-2">34 Reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
