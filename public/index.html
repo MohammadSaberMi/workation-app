@@ -52,34 +52,33 @@
         </div>
         <!-- serch bar -->
         <div
-          class="col-span-12 row-start-2 row-span-2 md:col-span-3 md:col-start-4 lg:col-start-4 md:row-start-1"
+          class="bg-slate-700 md:bg-transparent col-span-12 row-start-2 row-span-2 md:col-span-3 md:col-start-4 lg:col-start-4 md:row-start-1"
         >
-          <div class="ml-4 p-6 flex items-center justify-between">
-            <div class="relative bg-gray-100 rounded-e-lg">
+          <div class="ml-6 p-2 md:p-6 flex items-center justify-between">
+            <div class="relative bg-slate-900 md:bg-gray-100 rounded-e-lg">
               <button
                 type="submit"
-                class="flex justify-center items-center absolute bg-gray-100 top-0 rounded-s-lg -left-7 p-1 text-sm font-medium h-full text-gray-600"
+                class="flex justify-center items-center absolute bg-slate-900 md:bg-gray-100 top-0 rounded-s-lg -left-6 p-2 text-sm font-medium h-full text-gray-600"
               >
                 <svg
-                  class="w-5 h-5"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 20 20"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-slate-300 md:text-slate-700"
                 >
                   <path
-                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
                   />
                 </svg>
               </button>
               <input
                 type="search"
                 id="search-dropdown"
-                class="block w-full border-none text-base text-slate-700 bg-transparent rounded-lg focus:outline-none"
+                class="block w-full border-none text-base text-slate-200 md:text-slate-700 bg-transparent rounded-lg"
                 placeholder="title...."
                 required
               />
@@ -87,29 +86,31 @@
             <!-- serch filter -->
             <div class="blok md:hidden mr-4 ml-4">
               <div
-                class="flex items-center justify-center bg-slate-400 rounded-xl px-5 py-2"
+                class="flex items-center justify-center bg-slate-500 rounded-lg px-5 py-2"
               >
                 <svg
                   width="18"
-                  height="14"
-                  viewBox="0 0 18 14"
+                  height="15"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="text-slate-300 fill-current"
                 >
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
-                    d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1ZM3 7C3 6.44772 3.44772 6 4 6H14C14.5523 6 15 6.44772 15 7C15 7.55228 14.5523 8 14 8H4C3.44772 8 3 7.55228 3 7ZM7 12C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14H11C11.5523 14 12 13.5523 12 13C12 12.4477 11.5523 12 11 12H7Z"
+                    d="M0 1a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1Zm3 6a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm4 5a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H7Z"
                     fill="#A0AEC0"
                   />
                 </svg>
-                <span class="md:text-xl text-white font-bold">Filter</span>
+                <span class="md:text-xl text-white font-bold ml-4">Filter</span>
               </div>
             </div>
           </div>
         </div>
         <!-- ham -->
-        <div class="sm:hidden block col-start-10 col-span-4 row-start-1">
+        <div
+          class="sm:hidden max-w-sm mx-auto block col-start-10 col-span-3 row-start-1"
+        >
           <div class="flex items-center justify-center p-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +118,7 @@
               viewBox="0 0 24 24"
               stroke-width="2"
               stroke="currentColor"
-              class="w-9 h-9"
+              class="w-8 h-8"
             >
               <path
                 stroke-linecap="round"
