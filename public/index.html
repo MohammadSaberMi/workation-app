@@ -84,9 +84,9 @@
               />
             </div>
             <!-- serch filter -->
-            <div class="blok md:hidden mr-4 ml-4">
+            <div class="blok md:hidden mx-3">
               <div
-                class="flex items-center justify-center bg-slate-500 rounded-lg px-5 py-2"
+                class="flex items-center justify-center bg-slate-500 rounded-lg px-3 py-2"
               >
                 <svg
                   width="18"
@@ -133,7 +133,7 @@
           class="font-bold p-6 hidden sm:block col-span-8 md:col-span-6 sm:col-start-5 lg:col-span-6 lg:col-start-7"
         >
           <ul
-            class="flex whitespace-nowrap lg:gap-x-6 items-center lg:text-lg text-slate-800"
+            class="flex whitespace-nowrap gap-x-0 lg:gap-x-6 items-center lg:text-lg text-slate-800"
           >
             <li>
               <a
@@ -181,13 +181,11 @@
     </div>
     <!-- app -->
     <div
-      class="md:px-4 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[50px_minmax(1fr)]"
+      class="md:px-4 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[auto,1fr]"
     >
       <!-- app-sidebar -->
-      <div
-        class="bg-gray-800 row-span-2 col-span-3 xl:col-span-2 hidden md:block"
-      >
-        <div class="max-h-[calc(100vh_-_120px)] overflow-auto sticky top-28">
+      <div class="bg-gray-800 col-span-3 xl:col-span-2 hidden md:block">
+        <div class="max-h-[calc(100vh_-_140px)] overflow-auto sticky top-28">
           <!-- select options -->
           <div class="grid grid-cols-2 gap-6 p-6">
             <div class="col-span-1">
@@ -374,10 +372,10 @@
         </div>
       </div>
       <!-- app-content -->
-      <div class="px-4 md:px-4 lg:px-6 col-span-12 md:col-span-9">
+      <div class="bg-slate-200 px-4 col-span-12 md:col-span-9 xl:col-span-10">
         <!-- description -->
-        <div class="col-span-full mb-2">
-          <div class="bg-white flex justify-between">
+        <div class="col-span-full m-2 ml-0">
+          <div class="flex justify-between">
             <div>
               <h1 class="text-lg">Los Angeles</h1>
               <p class="text-sm text-slate-400">
@@ -392,27 +390,38 @@
         </div>
         <!-- product section -->
         <div
-          class="grid gap-y-12 grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-3 md:px-0 sm:gap-x-6 md:gap-y-20 mb-20"
+          class="grid gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:px-0 sm:gap-x-6 md:gap-y-20 mb-20"
         >
-          <div class="relative row-span-2 w-full h-full bg-gray-100 rounded-xl">
-            <div class="flex items-center justify-center">
-              <img
-                class="rounded-xl bg-auto"
-                src="../public/image/64dc1cd3_original.jpg"
-                alt=""
-              />
-              <div
-                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
-              >
-                <div class="px-4 pt-4">
-                  <div class="flex items-center">
-                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+          <div class="relative row-span-2 shadow-md rounded-xl mb-20">
+            <a href=""
+              ><div class="">
+                <img
+                  alt="تصویر خانه"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  class="object-cover object-center h-full w-full rounded-xl"
+                /></div
+            ></a>
+            <div class="relative">
+              <div class="w-full -top-10 absolute p-3 flex flex-col h-full">
+                <div class="p-4 rounded-lg shadow-lg bg-slate-50">
+                  <div class="flex items-center mb-2">
+                    <span class="px-2 rounded-xl font-thin bg-green-400 text-xs"
                       >PLUS</span
                     >
-                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                    <p
+                      class="text-xs ml-2 whitespace-nowrap text-slate-400 text-ellipsis overflow-hidden"
+                    >
+                      ENtiRE HOUSE • 3 BEDS
+                    </p>
                   </div>
-                  <h1 class="font-bold">Modern home in city center</h1>
-                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <h1
+                    class="font-bold text-sm sm:text-lg whitespace-nowrap text-ellipsis overflow-hidden mb-2"
+                  >
+                    Modern home in city center
+                  </h1>
+                  <span class="mb-2 text-sm sm:text-lg"
+                    >$1,400 <span class="text-slate-400">/wk</span>
+                  </span>
                   <div class="flex items-center">
                     <svg
                       width="12"
@@ -472,25 +481,36 @@
               </div>
             </div>
           </div>
-          <div class="relative row-span-2 w-full h-full bg-gray-100 rounded-xl">
-            <div class="flex items-center justify-center">
-              <img
-                class="rounded-xl bg-auto"
-                src="../public/image/64dc1cd3_original.jpg"
-                alt=""
-              />
-              <div
-                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
-              >
-                <div class="px-4 pt-4">
-                  <div class="flex items-center">
-                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+          <div class="relative row-span-2 shadow-md rounded-xl mb-20">
+            <a href=""
+              ><div class="">
+                <img
+                  alt="تصویر خانه"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  class="object-cover object-center h-full w-full rounded-xl"
+                /></div
+            ></a>
+            <div class="relative">
+              <div class="w-full -top-10 absolute p-3 flex flex-col h-full">
+                <div class="p-4 rounded-lg shadow-lg bg-slate-50">
+                  <div class="flex items-center mb-2">
+                    <span class="px-2 rounded-xl font-thin bg-green-400 text-xs"
                       >PLUS</span
                     >
-                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                    <p
+                      class="text-xs ml-2 whitespace-nowrap text-slate-400 text-ellipsis overflow-hidden"
+                    >
+                      ENtiRE HOUSE • 3 BEDS
+                    </p>
                   </div>
-                  <h1 class="font-bold">Modern home in city center</h1>
-                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <h1
+                    class="font-bold text-sm sm:text-lg whitespace-nowrap text-ellipsis overflow-hidden mb-2"
+                  >
+                    Modern home in city center
+                  </h1>
+                  <span class="mb-2 text-sm sm:text-lg"
+                    >$1,400 <span class="text-slate-400">/wk</span>
+                  </span>
                   <div class="flex items-center">
                     <svg
                       width="12"
@@ -550,25 +570,36 @@
               </div>
             </div>
           </div>
-          <div class="relative row-span-2 w-full h-full bg-gray-100 rounded-xl">
-            <div class="flex items-center justify-center">
-              <img
-                class="rounded-xl bg-auto"
-                src="../public/image/64dc1cd3_original.jpg"
-                alt=""
-              />
-              <div
-                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
-              >
-                <div class="px-4 pt-4">
-                  <div class="flex items-center">
-                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+          <div class="relative row-span-2 shadow-md rounded-xl mb-20">
+            <a href=""
+              ><div class="">
+                <img
+                  alt="تصویر خانه"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  class="object-cover object-center h-full w-full rounded-xl"
+                /></div
+            ></a>
+            <div class="relative">
+              <div class="w-full -top-10 absolute p-3 flex flex-col h-full">
+                <div class="p-4 rounded-lg shadow-lg bg-slate-50">
+                  <div class="flex items-center mb-2">
+                    <span class="px-2 rounded-xl font-thin bg-green-400 text-xs"
                       >PLUS</span
                     >
-                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                    <p
+                      class="text-xs ml-2 whitespace-nowrap text-slate-400 text-ellipsis overflow-hidden"
+                    >
+                      ENtiRE HOUSE • 3 BEDS
+                    </p>
                   </div>
-                  <h1 class="font-bold">Modern home in city center</h1>
-                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <h1
+                    class="font-bold text-sm sm:text-lg whitespace-nowrap text-ellipsis overflow-hidden mb-2"
+                  >
+                    Modern home in city center
+                  </h1>
+                  <span class="mb-2 text-sm sm:text-lg"
+                    >$1,400 <span class="text-slate-400">/wk</span>
+                  </span>
                   <div class="flex items-center">
                     <svg
                       width="12"
@@ -630,8 +661,8 @@
           </div>
         </div>
         <!-- description -->
-        <div class="col-span-full mb-2">
-          <div class="bg-white flex justify-between">
+        <div class="col-span-full m-2 ml-0">
+          <div class="flex justify-between">
             <div>
               <h1 class="text-lg">Los Angeles</h1>
               <p class="text-sm text-slate-400">
@@ -645,28 +676,39 @@
           </div>
         </div>
         <div
-          class="grid gap-y-12 grid-cols-1 w-full sm:grid-cols-2 lg:grid-cols-3 md:px-0 sm:gap-x-6 md:gap-y-20 mb-20"
+          class="grid gap-y-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:px-0 sm:gap-x-4 md:gap-y-20 mb-20"
         >
           <!-- product section 2 -->
-          <div class="relative w-full h-full bg-gray-100 rounded-xl">
-            <div class="flex items-center justify-center">
-              <img
-                class="rounded-xl bg-auto"
-                src="../public/image/64dc1cd3_original.jpg"
-                alt=""
-              />
-              <div
-                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
-              >
-                <div class="px-4 pt-4">
-                  <div class="flex items-center">
-                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+          <div class="relative row-span-2 shadow-md rounded-xl mb-20">
+            <a href=""
+              ><div class="">
+                <img
+                  alt="تصویر خانه"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  class="object-cover object-center h-full w-full rounded-xl"
+                /></div
+            ></a>
+            <div class="relative">
+              <div class="w-full -top-10 absolute p-3 flex flex-col h-full">
+                <div class="p-4 rounded-lg shadow-lg bg-slate-50">
+                  <div class="flex items-center mb-2">
+                    <span class="px-2 rounded-xl font-thin bg-green-400 text-xs"
                       >PLUS</span
                     >
-                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                    <p
+                      class="text-xs ml-2 whitespace-nowrap text-slate-400 text-ellipsis overflow-hidden"
+                    >
+                      ENtiRE HOUSE • 3 BEDS
+                    </p>
                   </div>
-                  <h1 class="font-bold">Modern home in city center</h1>
-                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <h1
+                    class="font-bold text-sm sm:text-lg whitespace-nowrap text-ellipsis overflow-hidden mb-2"
+                  >
+                    Modern home in city center
+                  </h1>
+                  <span class="mb-2 text-sm sm:text-lg"
+                    >$1,400 <span class="text-slate-400">/wk</span>
+                  </span>
                   <div class="flex items-center">
                     <svg
                       width="12"
@@ -726,25 +768,36 @@
               </div>
             </div>
           </div>
-          <div class="relative w-full h-full bg-gray-100 rounded-xl">
-            <div class="flex items-center justify-center">
-              <img
-                class="rounded-xl bg-auto"
-                src="../public/image/64dc1cd3_original.jpg"
-                alt=""
-              />
-              <div
-                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
-              >
-                <div class="px-4 pt-4">
-                  <div class="flex items-center">
-                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+          <div class="relative row-span-2 shadow-md rounded-xl mb-20">
+            <a href=""
+              ><div class="">
+                <img
+                  alt="تصویر خانه"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  class="object-cover object-center h-full w-full rounded-xl"
+                /></div
+            ></a>
+            <div class="relative">
+              <div class="w-full -top-10 absolute p-3 flex flex-col h-full">
+                <div class="p-4 rounded-lg shadow-lg bg-slate-50">
+                  <div class="flex items-center mb-2">
+                    <span class="px-2 rounded-xl font-thin bg-green-400 text-xs"
                       >PLUS</span
                     >
-                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                    <p
+                      class="text-xs ml-2 whitespace-nowrap text-slate-400 text-ellipsis overflow-hidden"
+                    >
+                      ENtiRE HOUSE • 3 BEDS
+                    </p>
                   </div>
-                  <h1 class="font-bold">Modern home in city center</h1>
-                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <h1
+                    class="font-bold text-sm sm:text-lg whitespace-nowrap text-ellipsis overflow-hidden mb-2"
+                  >
+                    Modern home in city center
+                  </h1>
+                  <span class="mb-2 text-sm sm:text-lg"
+                    >$1,400 <span class="text-slate-400">/wk</span>
+                  </span>
                   <div class="flex items-center">
                     <svg
                       width="12"
@@ -804,25 +857,36 @@
               </div>
             </div>
           </div>
-          <div class="relative w-full h-full bg-gray-100 rounded-xl">
-            <div class="flex items-center justify-center">
-              <img
-                class="rounded-xl bg-auto"
-                src="../public/image/64dc1cd3_original.jpg"
-                alt=""
-              />
-              <div
-                class="absolute -bottom-6 md:-bottom-12 bg-white rounded-xl w-11/12 shadow-md"
-              >
-                <div class="px-4 pt-4">
-                  <div class="flex items-center">
-                    <span class="px-2 rounded-xl font-thin bg-green-300 text-xs"
+          <div class="relative row-span-2 shadow-md rounded-xl mb-20">
+            <a href=""
+              ><div class="">
+                <img
+                  alt="تصویر خانه"
+                  src="../public/image/64dc1cd3_original.jpg"
+                  class="object-cover object-center h-full w-full rounded-xl"
+                /></div
+            ></a>
+            <div class="relative">
+              <div class="w-full -top-10 absolute p-3 flex flex-col h-full">
+                <div class="p-4 rounded-lg shadow-lg bg-slate-50">
+                  <div class="flex items-center mb-2">
+                    <span class="px-2 rounded-xl font-thin bg-green-400 text-xs"
                       >PLUS</span
                     >
-                    <p class="text-xs ml-2">ENtiRE HOUSE • 3 BEDS</p>
+                    <p
+                      class="text-xs ml-2 whitespace-nowrap text-slate-400 text-ellipsis overflow-hidden"
+                    >
+                      ENtiRE HOUSE • 3 BEDS
+                    </p>
                   </div>
-                  <h1 class="font-bold">Modern home in city center</h1>
-                  <span class="text-sm text-slate-400">$1,400 /wk </span>
+                  <h1
+                    class="font-bold text-sm sm:text-lg whitespace-nowrap text-ellipsis overflow-hidden mb-2"
+                  >
+                    Modern home in city center
+                  </h1>
+                  <span class="mb-2 text-sm sm:text-lg"
+                    >$1,400 <span class="text-slate-400">/wk</span>
+                  </span>
                   <div class="flex items-center">
                     <svg
                       width="12"
