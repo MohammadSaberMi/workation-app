@@ -169,7 +169,7 @@
             <li>
               <a href="">
                 <img
-                  class="w-10 h-10 rounded-full"
+                  class="w-10 object-cover object-center h-10 rounded-full"
                   src="../public/image/64dc1cd3_original.jpg"
                   alt=""
                 />
@@ -181,14 +181,16 @@
     </div>
     <!-- app -->
     <div
-      class="md:px-4 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[auto,1fr]"
+      class="px-4 md:px-4 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[auto,1fr]"
     >
       <!-- app-sidebar -->
-      <div class="bg-gray-800 col-span-3 xl:col-span-2 hidden md:block">
+      <div
+        class="bg-gray-800 md:col-span-3 xl:col-span-2 block col-span-full md:block"
+      >
         <div class="max-h-[calc(100vh_-_140px)] overflow-auto sticky top-28">
           <!-- select options -->
-          <div class="grid grid-cols-2 gap-6 p-6">
-            <div class="col-span-1">
+          <div class="grid grid-cols-4 gap-6 p-6">
+            <div class="sm:col-span-1 col-span-2 md:col-span-2">
               <form class="max-w-sm mx-auto">
                 <label
                   for="countries"
@@ -207,7 +209,7 @@
                 </select>
               </form>
             </div>
-            <div class="col-span-1">
+            <div class="sm:col-span-1 col-span-2 md:col-span-2">
               <form class="max-w-sm mx-auto">
                 <label
                   for="countries"
@@ -226,7 +228,7 @@
                 </select>
               </form>
             </div>
-            <div class="col-span-2 w-full">
+            <div class="sm:col-span-2 col-span-4 md:col-span-4 w-full">
               <form class="max-w-sm mx-auto">
                 <label
                   for="countries"
@@ -246,22 +248,24 @@
               </form>
             </div>
           </div>
-          <hr class="h-0.5 border-0 bg-gray-700" />
+          <hr class="h-0.5 border-0 bg-gray-700 mb-2" />
           <!-- app-filters -->
-
-          <div class="text-slate-50 md:text-sm lg:text-lg">
-            <div class="px-4 p-2">
-              <div class="text-slate-400 mb-2">Property Type</div>
-
+          <div class="mr-2 px-4 p-2 text-slate-400 mb-2 whitespace-nowrap">
+            Property Type
+          </div>
+          <div
+            class="px-4 text-slate-50 whitespace-nowrap flex flex-col sm:flex-wrap w-full sm:flex-row md:flex-col md:flex-none flex-grow-1 gap-2 sm:gap-6"
+          >
+            <div class="p-2">
               <label for="">
                 <input
                   type="checkbox"
-                  class="mr-2 form-checkbox border-none bg-slate-950 rounded-full p-3 text-blue-500 focus:ring-blue-500"
+                  class="form-checkbox border-none bg-slate-950 rounded-full p-3 text-blue-500 focus:ring-blue-500"
                 />
                 TownHouse
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
@@ -271,7 +275,7 @@
                 Apartment
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
@@ -281,7 +285,7 @@
                 TownHouse
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
@@ -294,80 +298,89 @@
           </div>
           <hr class="h-0.5 border-0 mt-2 bg-gray-700" />
           <!-- Amenities -->
-          <div class="text-slate-50 md:text-sm lg:text-lg">
-            <div class="px-4 p-2">
-              <div class="text-slate-400 mb-2">Property Type</div>
+          <div class="text-slate-400 px-4 p-2 mb-2">Property Type</div>
 
+          <div
+            class="text-slate-50 md:text-sm lg:text-lg whitespace-nowrap flex flex-col sm:flex-wrap w-full sm:flex-row md:flex-col md:flex-none px-4 flex-grow-1 gap-2 sm:gap-6 mb-10"
+          >
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                TownHouse
+                Balcony
               </label>
             </div>
 
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                Apartment
+                Air conditioning
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                TownHouse
+                Pool
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                Loft
+                Beach
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                Loft
+                Pet friendly
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                Loft
+                Kid friendly
               </label>
             </div>
-            <div class="px-4 p-2 mr-4">
+            <div class="p-2">
               <label for="">
                 <input
                   id="1"
                   type="checkbox"
                   class="mr-2 form-checkbox border-none bg-slate-950 rounded p-3 text-blue-500 focus:ring-blue-500"
                 />
-                Loft
+                Parking
               </label>
             </div>
+          </div>
+          <div class="bg-slate-950 grid grid-cols-2 p-4">
+            <button
+              class="bg-indigo-500 py-3 rounded-lg w-full sm:col-span-1 col-span-2 md:col-span-2 text-white"
+            >
+              Update results
+            </button>
           </div>
         </div>
       </div>
